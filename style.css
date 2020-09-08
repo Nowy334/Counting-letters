@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fa4c4d;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.container__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__box--input {
+    width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: all .3s;
+    font-size: 20px;
+}
+
+.container__box--input:focus {
+    outline: none;
+    width: 580px;
+    padding: 17px;
+}
+
+.container__box--label{
+    padding-top: 20px;
+    padding-left: 14px;
+    font-size: 20px;
+    color: white;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 550px){
+    
+    .text {
+        font-size: 40px;
+    }
+    
+    .container__box--input {
+        width: 300px;
+        font-size: 18px;
+    }
+    
+    .container__box--input:focus {
+        width: 380px;
+    }
+    
+    .container__box--label{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    
+    .text {
+        font-size: 35px;
+    }
+    
+    .container__box--input {
+        width: 220px;
+        font-size: 16px;
+    }
+    
+    .container__box--input:focus {
+        width: 300px;
+    }
+    
+    .container__box--label{
+        font-size: 16px;
+    }
+}
